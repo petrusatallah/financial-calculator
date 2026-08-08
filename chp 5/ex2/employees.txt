@@ -1,5 +1,0 @@
-Name|Department|Salary
-Peter|Finance|3200
-Sara|HR|2900
-John|IT|4100
-Mike|Finance|3800
