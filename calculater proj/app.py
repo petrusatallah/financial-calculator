@@ -6,13 +6,49 @@ st.set_page_config(page_title="Financial Calculator", layout="wide")
 
 _CSS = """
 <style>
-body {background-color: #0b1220; color: #d1fae5;}
+body {background-color: #0b1220; color: #D1D5DB;}
 .stApp { background-color: #0b1220; }
 .section { background-color: #0f1724; padding: 18px; border-radius: 12px; }
 .result-card { background-color: #071019; padding: 18px; border-radius: 12px; border: 1px solid rgba(16,185,129,0.08); }
 .round-input { border-radius: 8px; }
 div.stButton>button:first-child { background-color: #16a34a; color: white; border-radius: 8px; padding: 8px 18px; }
-.small-muted { color: #94a3b8; font-size:12px }
+.small-muted { color: #D1D5DB; font-size:12px }
+
+/* Headings and labels */
+.stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp h5, .stApp h6 {
+  color: #FFFFFF !important;
+}
+
+/* Input labels and normal paragraph text */
+label, .stApp label, .css-ng1a4o, .css-1gkcyyc, .css-1d391kg, .css-1v3fvcr {
+  color: #D1D5DB !important;
+}
+
+/* Inactive tab text */
+button[role="tab"][aria-selected="false"] {
+  color: #D1D5DB !important;
+}
+
+/* Keep active tab accent color by not overriding selected tab */
+button[role="tab"][aria-selected="true"] {
+  color: inherit !important;
+}
+
+/* Input text and backgrounds */
+input, textarea, select {
+  background-color: #FFFFFF !important;
+  color: #111111 !important;
+}
+
+/* Result cards and section text */
+.result-card, .result-card * {
+  color: #FFFFFF !important;
+}
+
+/* Icons next to headings */
+.stApp svg, svg {
+  fill: #D1D5DB !important;
+}
 </style>
 """
 
