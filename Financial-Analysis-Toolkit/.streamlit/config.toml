@@ -1,0 +1,9 @@
+[theme]
+base = "dark"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+address = "127.0.0.1"
+maxUploadSize = 32
